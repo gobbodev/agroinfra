@@ -3,7 +3,7 @@
 import { Carousel, CarouselContent, CarouselItem } from "../../ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-import { dataBanner } from "./mock-data";
+import { dataBanner } from "./data";
 
 export function Banner() {
   return (
@@ -20,7 +20,7 @@ export function Banner() {
       <CarouselContent className="">
         {dataBanner.map((item, index) => (
           <CarouselItem
-            className="w-screen h-screen flex flex-col items-center justify-center text-slate-50"
+            className="w-screen h-screen flex flex-col items-center justify-center text-slate-200"
             key={item.titulo + index}
           >
             <div className="title ">
