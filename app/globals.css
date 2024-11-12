@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans);
 }
 
 @layer base {
@@ -22,12 +22,12 @@ body {
     font-weight: 700;
 
     @apply uppercase;
-
-    @apply _margin-25;
+    @apply _margin-25b;
     @apply _font-36;
   }
 
   ._sub-title {
+    font-weight: 300;
     @apply _font-14;
   }
 
@@ -36,6 +36,7 @@ body {
 
     @apply leading-8;
     @apply text-preto;
+    @apply _font-18;
   }
 
   @media (max-width: 900px) {

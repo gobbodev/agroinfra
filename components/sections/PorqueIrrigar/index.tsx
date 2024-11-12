@@ -7,9 +7,9 @@ export function PorqueIrrigar() {
       <SectionInfo
         title="Porque Irrigar?"
         subTitle="evite perdas na colheta"
-        text="<p>A irrigação é a chave para garantir uma colheita abundante e saudável. Com as mudanças climáticas e a irregularidade das chuvas, depender exclusivamente do clima é arriscado e pode trazer grandes perdas. Ao irrigar sua plantação, você assume o controle do crescimento das suas culturas, proporcionando a quantidade ideal de água para que cada planta se desenvolva ao máximo.
+        text="<p> Você não pode mais depender apenas da chuva. Os tempos mudaram. Aquele calendário agrícola que seu pai e seu avô seguiam já não funciona mais. As chuvas que antes eram regulares agora são irregulares e imprevisíveis. Em um momento, sua plantação pode estar sofrendo com a seca; em outro, enfrentando chuvas torrenciais.
         <br/><br/>
-        Além disso, um sistema de irrigação bem planejado economiza água e reduz desperdícios, tornando sua produção mais sustentável e lucrativa. Irrigar é proteger seu investimento, garantir a qualidade dos seus produtos e, acima de tudo, assegurar que sua colheita não dependa do imprevisível.</p>"
+        Um sistema de irrigação bem planejado economiza água e reduz desperdícios, tornando sua produção mais sustentável e lucrativa. Irrigar é proteger seu investimento, garantir a qualidade dos seus produtos e, acima de tudo, assegurar que sua colheita não dependa do imprevisível.</p>"
         image={{
           src: "/images/homem_preocupado.png",
           alt: "homem preocupado pensando e sentado em uma cadeira ",
