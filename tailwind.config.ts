@@ -11,6 +11,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        verde: "var(--verde)",
+        branco: "var(--branco)",
+        preto: "var(--preto)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

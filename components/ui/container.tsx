@@ -1,5 +1,14 @@
 import { ReactNode } from "react";
 
-export function Container({ children }: { children: ReactNode }) {
-  return <div className="relative w-full max-w-[1150px] mx-auto">{children}</div>;
+interface ContainerProps {
+  children: ReactNode;
+  className?: string;
+}
+
+export function Container({ children, className }: ContainerProps) {
+  return (
+    <div className={`relative w-full max-w-[1150px] mx-auto ${className}`}>
+      {children}
+    </div>
+  );
 }
