@@ -6,7 +6,12 @@ import Autoplay from "embla-carousel-autoplay";
 
 import { ArrowDown } from "@/public/svg";
 
-import { Carousel, CarouselContent, CarouselItem } from "../../ui/carousel";
+import { Container } from "@/components/ui/container";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
 import { dataBanner } from "./data";
 
@@ -30,24 +35,40 @@ export function Banner() {
         />
       </div>
       <div className="_overlay-full" />
-      <CarouselContent className="z-20">
-        {dataBanner.map((item, index) => (
-          <CarouselItem
-            className="w-screen h-screen flex flex-col items-center justify-center text-slate-200"
-            key={item.titulo + index}
-          >
-            <div className="_title">
-              {index == 0 ? <h1>{item.titulo}</h1> : <h2>{item.titulo}</h2>}
-            </div>
-            <p>{item.subTitulo}</p>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
+
+      <Container>
+        <CarouselContent className="z-20">
+          {dataBanner.map((item, index) => (
+            <CarouselItem
+              className="mt-12 w-full h-screen flex flex-col items-center justify-center text-branco"
+              key={item.titulo + index}
+            >
+              <div className="_banner-title _shadow-text font-osvaldo">
+                {index == 0 ? (
+                  <h1 dangerouslySetInnerHTML={{ __html: item.titulo }} />
+                ) : (
+                  <h2 dangerouslySetInnerHTML={{ __html: item.titulo }} />
+                )}
+              </div>
+              <p className="_font-30 _shadow-text uppercase font-extralight text-branco">
+                {item.subTitulo}
+              </p>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Container>
+
       <Link
         href={"#irrigacao"}
-        className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20"
+        className="_effect-reflection absolute bottom-[120px] left-1/2 -translate-x-1/2 z-20 "
       >
-        <ArrowDown />
+       
+        <span className="absolute"/>
+        <span className="absolute"/>
+
+        <ArrowDown className="absolute top-2" />
+        <ArrowDown className="mt-[10px]"/>
+
       </Link>
     </Carousel>
   );

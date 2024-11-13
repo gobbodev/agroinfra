@@ -1,0 +1,59 @@
+@layer utilities {
+  ._effect-reflection {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: var(--verde-forte);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+  }
+
+  ._effect-reflection span {
+    position: absolute;
+    display: block;
+  }
+
+  /* Define the animation for each span */
+  @keyframes slideInTop {
+    0% {
+      top: -100%;
+    }
+    100% {
+      top: 100%;
+    }
+  }
+
+  @keyframes slideInBottom {
+    0% {
+      bottom: -100%;
+    }
+    100% {
+      bottom: 100%;
+    }
+  }
+
+  
+
+  ._effect-reflection span:nth-child(1) {
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--verde-forte));
+    animation: slideInTop 2.5s linear infinite 0s;
+  }
+
+ 
+
+  ._effect-reflection span:nth-child(2) {
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--verde-forte));
+    animation: slideInBottom 2.5s linear infinite 0s;
+  }
+}

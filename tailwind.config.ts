@@ -10,10 +10,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        osvaldo: "var(--font-osvaldo)",
+      },
       colors: {
         verde: "var(--verde)",
         branco: "var(--branco)",
         preto: "var(--preto)",
+        "verde-forte": "var(--verde-forte)",
       },
       screens: {
         container: {

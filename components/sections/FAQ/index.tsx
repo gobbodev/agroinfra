@@ -12,7 +12,7 @@ import { Question } from "@/public/svg";
 
 export function FAQ() {
   return (
-    <section className="_p-section">
+    <section id="faq" className="_p-section">
       <Container className="flex flex-col items-center w-full">
         <Title title={"FAQ"} subTitle="outras dúvidas frequentes" />
         <Accordion
@@ -28,7 +28,7 @@ export function FAQ() {
           ))}
         </Accordion>
 
-        <Question className="z-0 absolute right-4 top-5 laptop:_r-top laptop:bottom-[-60px] laptop:max-w-36 laptop:opacity-20" />
+        <Question className="z-0 absolute right-4 top-5 laptop:_r-top laptop:bottom-[-60px] laptop:max-w-28 laptop:opacity-10" />
       </Container>
     </section>
   );

@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+
+import { Oswald } from "next/font/google";
+
 import localFont from "next/font/local";
 
 import { Header } from "@/components/layout/header";
@@ -9,6 +12,11 @@ const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 200 300 900",
+});
+
+const osvaldo = Oswald({
+  subsets: ["latin"],
+  variable: "--font-osvaldo",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable}  antialiased`}>
+      <body className={`${geistSans.variable} ${osvaldo.variable} antialiased`}>
         <Header />
         {children}
       </body>

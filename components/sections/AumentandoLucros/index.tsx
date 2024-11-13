@@ -5,6 +5,7 @@ export function AumentandoLucros() {
     <SectionInfo
       invertDirection
       darkMode
+      id="lucros"
       title="Aumentando Lucros"
       subTitle="água, o ouro da agricultura"
       image={{

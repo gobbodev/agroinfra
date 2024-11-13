@@ -1,7 +1,16 @@
 @layer utilities {
+  ._font-68 {
+    font-size: 68px;
+    line-height: normal;
+  }
+
   ._font-36 {
     font-size: 36px;
     line-height: normal;
+  }
+
+  ._font-30 {
+    font-size: 30px;
   }
 
   ._font-18 {
@@ -16,9 +25,23 @@
     font-size: 14px;
   }
 
+  @media (max-width: 1150px) {
+    ._font-68 {
+      font-size: 64px;
+    }
+  }
+
   @media (max-width: 900px) {
+    ._font-68 {
+      font-size: 60px;
+    }
+
     ._font-36 {
       font-size: 34px;
+    }
+
+    ._font-30 {
+      font-size: 28px;
     }
 
     ._font-18 {
@@ -26,8 +49,17 @@
     }
   }
   @media (max-width: 600px) {
+    ._font-68 {
+      font-size: 54px;
+    }
+
     ._font-36 {
       font-size: 32px;
+    }
+
+    
+    ._font-30 {
+      font-size: 26px;
     }
 
     ._font-18 {
@@ -39,18 +71,34 @@
     }
   }
   @media (max-width: 450px) {
+    ._font-68 {
+      font-size: 48px;
+    }
+
     ._font-36 {
       font-size: 30px;
+    }
+
+    ._font-30 {
+      font-size: 24px;
     }
 
     ._font-14 {
       font-size: 12px;
     }
   }
- 
-  @media (max-width: 350px) {
+
+  @media (max-width: 380px) {
+    ._font-68 {
+      font-size: 46px;
+    }
+
     ._font-36 {
-      font-size: 24px;
+      font-size: 26px;
+    }
+
+    ._font-30 {
+      font-size: 22px;
     }
 
     ._font-18 {

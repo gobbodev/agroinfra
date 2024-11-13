@@ -3,6 +3,7 @@ import { Container } from "./container";
 import { Title } from "./title";
 
 interface SectionInfoProps {
+  id?: string;
   title: string;
   text: string;
   image: {
@@ -16,6 +17,7 @@ interface SectionInfoProps {
 }
 
 export function SectionInfo({
+  id,
   title,
   text,
   image,
@@ -25,7 +27,7 @@ export function SectionInfo({
   invertDirection,
 }: SectionInfoProps) {
   return (
-    <section className={`relative z-10 ${darkMode && "bg-preto"} _p-section`}>
+    <section id={id} className={`relative z-10 ${darkMode && "bg-preto"} _p-section`}>
       <Container>
         <Title darkMode={darkMode} title={title} subTitle={subTitle} />
         <div

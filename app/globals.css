@@ -1,6 +1,7 @@
 @import "./styles/font.css";
 @import "./styles/margin.css";
 @import "./styles/util.css";
+@import "./styles/animation.css";
 
 @tailwind base;
 @tailwind components;
@@ -8,37 +9,59 @@
 
 body {
   font-family: var(--font-geist-sans);
-  width: 100%;
   /*  background-color: var(--branco); */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @layer base {
   :root {
     --preto: #191c19;
     --verde: #84c44c;
+    --verde-forte: #8cd948;
     --branco: #e2e8f0;
   }
 }
 
 @layer utilities {
+  ._banner-title {
+    font-weight: 700;
+
+    @apply leading-normal;
+    @apply text-center;
+    @apply uppercase;
+
+    @apply _font-68;
+    @apply _margin-25b;
+  }
+
   ._title {
     font-weight: 700;
 
     @apply text-center;
     @apply uppercase;
+
     @apply _margin-25b;
     @apply _font-36;
   }
 
   ._sub-title {
     font-weight: 300;
+
     @apply _font-14;
+  }
+
+  ._shadow-text {
+    text-shadow: #000 2px 2px;
   }
 
   ._text {
     text-align: justify;
 
     @apply leading-8;
+
     @apply _font-18;
   }
 
@@ -73,11 +96,11 @@ body {
     height: 2px;
     margin-bottom: -3px;
     width: 0;
-    background-color: var(--verde); /* Usa a cor atual do texto */
+    background-color: var(--verde);
     transition: width 0.3s ease;
   }
   ._underline-effect:hover::after {
-    width: 100%; /* Expande o traço até a largura total do link */
+    width: 100%;
   }
 
   /*bag pra imagens do next*/
@@ -93,12 +116,38 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #061500;
-    opacity: 0.75;
+    opacity: 0.78;
     z-index: 0;
   }
 
   ._p-section {
     padding: 85px 0;
+  }
+
+  ::-webkit-scrollbar {
+    position: absolute;
+    background-color: transparent;
+    width: 14px;
+  }
+
+  /* background of the scrollbar except button or resizer */
+  ::-webkit-scrollbar-track {
+    background-color: var(--preto);
+    cursor: pointer;
+  }
+
+  /* scrollbar itself */
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--verde);
+    border-radius: 8px;
+    border: 3px solid var(--preto);
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    border: 2px solid #f4f4f4;
+  }
+  ::-webkit-scrollbar-button {
+    display: none;
   }
 
   /*arrow down efeito*/
