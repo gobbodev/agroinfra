@@ -1,3 +1,4 @@
+import { AumentandoLucros } from "@/components/sections/AumentandoLucros";
 import { Banner } from "@/components/sections/Banner";
 import { FAQ } from "@/components/sections/FAQ";
 import { PorqueIrrigar } from "@/components/sections/PorqueIrrigar";
@@ -11,6 +12,7 @@ export default function Home() {
       <main className="">
         <FAQ />
       </main>
+      <AumentandoLucros />
     </div>
   );
 }

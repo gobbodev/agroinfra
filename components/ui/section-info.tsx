@@ -1,6 +1,6 @@
-import { Crown } from "@/public/svg";
 import Image from "next/image";
 import { Container } from "./container";
+import { Title } from "./title";
 
 interface SectionInfoProps {
   title: string;
@@ -10,7 +10,9 @@ interface SectionInfoProps {
     alt: string;
   };
   subTitle?: string;
+  darkMode?: boolean;
   invertContent?: boolean;
+  invertDirection?: boolean;
 }
 
 export function SectionInfo({
@@ -18,34 +20,40 @@ export function SectionInfo({
   text,
   image,
   subTitle,
+  darkMode,
   invertContent,
+  invertDirection,
 }: SectionInfoProps) {
   return (
-    <section className="_p-section">
+    <section className={`relative z-10 ${darkMode && "bg-preto"} _p-section`}>
       <Container>
-        <div className={`flex flex-col items-center`}>
-          {subTitle && (
-            <span className="_sub-title _margin-8b flex gap-2 text-sm text-verde font-light uppercase items-center">
-              <Crown />
-              {subTitle}
-              <Crown />
-            </span>
-          )}
-          <h2 className="_title">{title}</h2>
-        </div>
+        <Title darkMode={darkMode} title={title} subTitle={subTitle} />
+        <div
+          className={`
+          ${invertDirection && "flex-col"} 
+          ${invertContent && "flex-row-reverse"}
 
-        <div className="flex justify-between w-full gap-10 items-center laptop:flex-col laptop:gap-0">
+          flex justify-between w-full gap-10 items-center laptop:flex-col laptop:gap-0`}
+        >
           <div
-            className={`_bag-image max-w-lg w-full ${
-              !invertContent && "laptop: _margin-25b"
-            }`}
+            className={`
+            ${!invertContent && "laptop:_margin-25b"}
+            ${invertDirection && "max-w-md"}
+            
+            _bag-image max-w-lg w-full 
+            `}
           >
             <Image fill src={image.src} alt={image.alt} />
           </div>
+
           <div
-            className={`max-w-md w-full _text laptop:max-w-full ${
-              invertContent && "laptop: _margin-25b"
-            }`}
+            className={`
+              ${invertContent && "laptop:_margin-25b"}
+              ${invertDirection && "!max-w-full"}
+              ${darkMode ? "text-branco" : "text-preto"}
+              
+              _text max-w-md w-full laptop:max-w-full 
+              `}
             dangerouslySetInnerHTML={{ __html: text }}
           />
         </div>

@@ -4,12 +4,16 @@
     line-height: normal;
   }
 
-  ._font-14 {
-    font-size: 14px;
-  }
-
   ._font-18 {
     font-size: 18px;
+  }
+
+  ._font-16 {
+    font-size: 16px;
+  }
+
+  ._font-14 {
+    font-size: 14px;
   }
 
   @media (max-width: 900px) {
@@ -29,6 +33,10 @@
     ._font-18 {
       font-size: 16px;
     }
+
+    ._font-16 {
+      font-size: 14px;
+    }
   }
   @media (max-width: 450px) {
     ._font-36 {
@@ -39,11 +47,7 @@
       font-size: 12px;
     }
   }
-  @media (max-width: 360px) {
-    ._font-36 {
-      font-size: 26px;
-    }
-  }
+ 
   @media (max-width: 350px) {
     ._font-36 {
       font-size: 24px;
@@ -51,6 +55,10 @@
 
     ._font-18 {
       font-size: 15px;
+    }
+
+    ._font-16 {
+      font-size: 13px;
     }
   }
 }

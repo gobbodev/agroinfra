@@ -1,12 +1,15 @@
 @import "./styles/font.css";
 @import "./styles/margin.css";
+@import "./styles/util.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: arial;
+  font-family: var(--font-geist-sans);
+  width: 100%;
+  /*  background-color: var(--branco); */
 }
 
 @layer base {
@@ -21,7 +24,7 @@ body {
   ._title {
     font-weight: 700;
 
-    color: var(--preto);
+    @apply text-center;
     @apply uppercase;
     @apply _margin-25b;
     @apply _font-36;
@@ -36,7 +39,6 @@ body {
     text-align: justify;
 
     @apply leading-8;
-    @apply text-preto;
     @apply _font-18;
   }
 
@@ -54,13 +56,7 @@ body {
 
   @media (max-width: 450px) {
     ._text {
-      @apply leading-6;
-    }
-  }
-
-  @media (max-width: 380px) {
-    ._text {
-      @apply leading-5;
+      text-align: start;
     }
   }
 
@@ -102,7 +98,7 @@ body {
   }
 
   ._p-section {
-    padding: 60px 0;
+    padding: 85px 0;
   }
 
   /*arrow down efeito*/
