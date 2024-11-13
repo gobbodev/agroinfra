@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 body {
-  font-family: var(--font-geist-sans);
+  font-family: arial;
 }
 
 @layer base {
@@ -21,6 +21,7 @@ body {
   ._title {
     font-weight: 700;
 
+    color: var(--preto);
     @apply uppercase;
     @apply _margin-25b;
     @apply _font-36;

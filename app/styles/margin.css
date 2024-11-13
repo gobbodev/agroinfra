@@ -3,9 +3,21 @@
     margin-bottom: 25px;
   }
 
+  ._margin-13b {
+    margin-bottom: 13px;
+  }
+
+  ._margin-8b {
+    margin-bottom: 8px;
+  }
+
   @media (max-width: 900px) {
     ._margin-25b {
       margin-bottom: 24px;
+    }
+
+    ._margin-13b {
+      margin-bottom: 12px;
     }
   }
 
@@ -13,11 +25,19 @@
     ._margin-25b {
       margin-bottom: 22px;
     }
+
+    ._margin-8b {
+      margin-bottom: 7px;
+    }
   }
 
   @media (max-width: 450px) {
     ._margin-25b {
       margin-bottom: 20px;
+    }
+
+    ._margin-13b {
+      margin-bottom: 11px;
     }
   }
 
@@ -25,11 +45,23 @@
     ._margin-25b {
       margin-bottom: 19px;
     }
+
+    ._margin-8b {
+      margin-bottom: 6px;
+    }
   }
 
   @media (max-width: 350px) {
     ._margin-25b {
       margin-bottom: 18px;
+    }
+
+    ._margin-13b {
+      margin-bottom: 10px;
+    }
+
+    ._margin-8b {
+      margin-bottom: 5px;
     }
   }
 }

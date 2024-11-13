@@ -8,12 +8,12 @@ export const dataLayout = [
     link: "#irrigacao",
   },
   {
-    text: "Mudanças Climáticas",
-    link: "#clima",
+    text: "FAQ",
+    link: "#faq",
   },
   {
-    text: "Não se Conveceu?",
-    link: "#conveceu",
+    text: "Aumentando Lucros",
+    link: "#lucros",
   },
   {
     text: "Sobre Nós",

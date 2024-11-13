@@ -1,4 +1,5 @@
 import { Banner } from "@/components/sections/Banner";
+import { FAQ } from "@/components/sections/FAQ";
 import { PorqueIrrigar } from "@/components/sections/PorqueIrrigar";
 
 export default function Home() {
@@ -6,8 +7,9 @@ export default function Home() {
     <div className="">
       <Banner />
 
+      <PorqueIrrigar />
       <main className="">
-        <PorqueIrrigar />
+        <FAQ />
       </main>
     </div>
   );

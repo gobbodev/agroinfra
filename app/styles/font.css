@@ -1,6 +1,7 @@
 @layer utilities {
   ._font-36 {
     font-size: 36px;
+    line-height: normal;
   }
 
   ._font-14 {

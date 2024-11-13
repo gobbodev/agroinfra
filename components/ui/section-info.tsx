@@ -23,13 +23,9 @@ export function SectionInfo({
   return (
     <section className="_p-section">
       <Container>
-        <div
-          className={`${
-            invertContent && "flex-row-reverse"
-          } flex flex-col items-center`}
-        >
+        <div className={`flex flex-col items-center`}>
           {subTitle && (
-            <span className="_sub-title flex gap-2 mb-2 text-sm text-verde font-light uppercase items-center">
+            <span className="_sub-title _margin-8b flex gap-2 text-sm text-verde font-light uppercase items-center">
               <Crown />
               {subTitle}
               <Crown />
@@ -38,7 +34,7 @@ export function SectionInfo({
           <h2 className="_title">{title}</h2>
         </div>
 
-        <div className="flex justify-between w-full gap-10 laptop:flex-col laptop:items-center laptop:gap-0">
+        <div className="flex justify-between w-full gap-10 items-center laptop:flex-col laptop:gap-0">
           <div
             className={`_bag-image max-w-lg w-full ${
               !invertContent && "laptop: _margin-25b"

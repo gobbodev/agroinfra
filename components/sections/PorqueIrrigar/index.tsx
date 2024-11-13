@@ -1,9 +1,7 @@
-import { Container } from "@/components/ui/container";
 import { SectionInfo } from "@/components/ui/section-info";
 
 export function PorqueIrrigar() {
   return (
-    <Container>
       <SectionInfo
         title="Porque Irrigar?"
         subTitle="evite perdas na colheta"
@@ -15,6 +13,5 @@ export function PorqueIrrigar() {
           alt: "homem preocupado pensando e sentado em uma cadeira ",
         }}
       />
-    </Container>
   );
 }
