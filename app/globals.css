@@ -91,7 +91,7 @@ html {
     }
 
     ._p-section {
-      padding: 60px 0;
+      padding: 65px 0;
     }
   }
 
@@ -100,14 +100,14 @@ html {
       text-align: start;
     }
 
-    ._p-section {
-      padding: 50px 0;
-    }
+    /* ._p-section {
+      padding: 60px 0;
+    } */
   }
 
   @media (max-width: 380px) {
     ._p-section {
-      padding: 45px 0;
+      padding: 60px 0;
     }
   }
 
