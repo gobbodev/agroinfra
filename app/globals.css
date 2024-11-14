@@ -65,9 +65,23 @@ html {
     @apply _font-18;
   }
 
+  ._p-section {
+    padding: 100px 0;
+  }
+
+  @media (max-width: 1050px) {
+    ._p-section {
+      padding: 90px 0;
+    }
+  }
+
   @media (max-width: 900px) {
     ._text {
       @apply leading-7;
+    }
+
+    ._p-section {
+      padding: 85px 0;
     }
   }
 
@@ -75,11 +89,25 @@ html {
     ._sub-title > svg {
       width: 24px;
     }
+
+    ._p-section {
+      padding: 60px 0;
+    }
   }
 
   @media (max-width: 450px) {
     ._text {
       text-align: start;
+    }
+
+    ._p-section {
+      padding: 50px 0;
+    }
+  }
+
+  @media (max-width: 380px) {
+    ._p-section {
+      padding: 45px 0;
     }
   }
 
@@ -120,10 +148,6 @@ html {
     z-index: 0;
   }
 
-  ._p-section {
-    padding: 100px 0;
-  }
-
   ::-webkit-scrollbar {
     position: absolute;
     background-color: transparent;
@@ -149,9 +173,4 @@ html {
   ::-webkit-scrollbar-button {
     display: none;
   }
-
-  .mobile-btn {
-    position: absolute;
-  }
-  
 }
