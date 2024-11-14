@@ -24,7 +24,7 @@ export function Header() {
   return (
     <header className='w-full absolute z-50 text-branco py-5'>
       <Container className='flex justify-between items-center'>
-        <div className='_bag-image max-w-[350px] laptop:max-w-60 mobile_s:max-w-56 mobile_sx:max-w-[200px]'>
+        <div className='_bag-image max-w-[350px] laptop:max-w-60 mobile_s:max-w-52 mobile_sx:max-w-[200px]'>
           <Image
             fill
             src={'/images/logo_escrita.png'}
@@ -42,10 +42,10 @@ export function Header() {
           }
           `}
         />
-        {/* mobile menu overlay */}
+
         <nav
           className={`flex gap-8 justify-end transition-all duration-500 laptop:gap-6 mobile:fixed mobile:max-w-screen mobile:w-[75%] mobile:h-screen mobile:top-0 mobile:left-0 mobile:bg-preto mobile:flex-col mobile:justify-center mobile:items-center
-          ${isOpen ? 'mobile:opacity-100 mobile:visible' : 'mobile:opacity-0'}
+          ${isOpen ? 'mobile:opacity-100 mobile:visible' : 'mobile:opacity-0 mobile:invisible'}
         `}
         >
           {dataLayout.map((item, index) => (
@@ -53,14 +53,15 @@ export function Header() {
               className='_font-16 _shadow-text _underline-effect relative font-semibold mobile:_font-18'
               href={item.link}
               key={item.text + index}
+              onClick={() => isOpen && setIsOpen(false)}
             >
               {item.text}
             </Link>
           ))}
         </nav>
       </Container>
-      {/*meu mobile*/}
 
+      {/*btn mobile*/}
       <div
         className={`hidden absolute right-3 top-5 cursor-pointer mobile:block
           ${isOpen && '!fixed'} 
