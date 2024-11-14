@@ -50,14 +50,13 @@
   }
   @media (max-width: 600px) {
     ._font-68 {
-      font-size: 54px;
+      font-size: 50px;
     }
 
     ._font-36 {
       font-size: 32px;
     }
 
-    
     ._font-30 {
       font-size: 26px;
     }
@@ -72,7 +71,7 @@
   }
   @media (max-width: 450px) {
     ._font-68 {
-      font-size: 48px;
+      font-size: 42px;
     }
 
     ._font-36 {
@@ -90,7 +89,7 @@
 
   @media (max-width: 380px) {
     ._font-68 {
-      font-size: 46px;
+      font-size: 38px;
     }
 
     ._font-36 {
@@ -107,6 +106,12 @@
 
     ._font-16 {
       font-size: 13px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    ._font-68 {
+      font-size: 35px;
     }
   }
 }

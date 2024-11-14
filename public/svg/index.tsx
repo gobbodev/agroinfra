@@ -7,7 +7,7 @@ export function ArrowDown({ className }: { className?: string }) {
       version="1.1"
       id="Layer_1"
       viewBox="0 0 512.011 512.011"
-      className={className + ` w-9 h-9 mobile_g:h-7 mobile_g:w-7`}
+      className={className + ` w-9 h-9`}
     >
       <g>
         <g>

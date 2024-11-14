@@ -60,14 +60,14 @@ export function Banner() {
 
       <Link
         href={"#irrigacao"}
-        className="_effect-reflection absolute bottom-0 left-1/2 -translate-x-1/2 z-20 "
+        className="_effect-reflection absolute py-4 px-[30px] bottom-0 left-1/2 -translate-x-1/2 z-20 mobile:py-3 mobile:px-6"
       >
        
         <span className="absolute"/>
         <span className="absolute"/>
 
-        <ArrowDown className="absolute top-2" />
-        <ArrowDown className="mt-[10px]"/>
+        <ArrowDown className="absolute top-2 mobile:w-7 mobile:h-7" />
+        <ArrowDown className="mt-[10px] mobile:w-7 mobile:h-7  mobile:mt-[8px]"/>
 
       </Link>
     </Carousel>
