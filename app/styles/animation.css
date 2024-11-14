@@ -1,6 +1,6 @@
 @layer utilities {
   ._effect-reflection {
-    position: relative;
+    position: absolute;
     display: inline-block;
     padding: 15px 30px;
     color: var(--verde-forte);

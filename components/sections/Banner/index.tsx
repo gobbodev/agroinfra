@@ -37,7 +37,7 @@ export function Banner() {
       <div className="_overlay-full" />
 
       <Container>
-        <CarouselContent className="z-20">
+        <CarouselContent className="z-20 max-h-screen ">
           {dataBanner.map((item, index) => (
             <CarouselItem
               className="mt-12 w-full h-screen flex flex-col items-center justify-center text-branco"
@@ -50,7 +50,7 @@ export function Banner() {
                   <h2 dangerouslySetInnerHTML={{ __html: item.titulo }} />
                 )}
               </div>
-              <p className="_font-30 _shadow-text uppercase font-extralight text-branco">
+              <p className="_font-30 _shadow-text uppercase font-extralight text-branco text-center">
                 {item.subTitulo}
               </p>
             </CarouselItem>
@@ -60,7 +60,7 @@ export function Banner() {
 
       <Link
         href={"#irrigacao"}
-        className="_effect-reflection absolute bottom-[120px] left-1/2 -translate-x-1/2 z-20 "
+        className="_effect-reflection absolute bottom-0 left-1/2 -translate-x-1/2 z-20 "
       >
        
         <span className="absolute"/>

@@ -1,7 +1,7 @@
-@import "./styles/font.css";
-@import "./styles/margin.css";
-@import "./styles/util.css";
-@import "./styles/animation.css";
+@import './styles/font.css';
+@import './styles/margin.css';
+@import './styles/util.css';
+@import './styles/animation.css';
 
 @tailwind base;
 @tailwind components;
@@ -89,7 +89,7 @@ html {
 
 @layer utilities {
   ._underline-effect::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -121,7 +121,7 @@ html {
   }
 
   ._p-section {
-    padding: 85px 0;
+    padding: 100px 0;
   }
 
   ::-webkit-scrollbar {
@@ -150,5 +150,8 @@ html {
     display: none;
   }
 
-  /*arrow down efeito*/
+  .mobile-btn {
+    position: absolute;
+  }
+  
 }

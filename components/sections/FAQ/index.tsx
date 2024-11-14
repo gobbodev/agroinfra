@@ -12,7 +12,7 @@ import { Question } from "@/public/svg";
 
 export function FAQ() {
   return (
-    <section id="faq" className="_p-section">
+    <section id="faq" className="_p-section !pt-0">
       <Container className="flex flex-col items-center w-full">
         <Title title={"FAQ"} subTitle="outras dúvidas frequentes" />
         <Accordion

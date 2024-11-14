@@ -39,7 +39,7 @@ export function Crown() {
   );
 }
 
-export function Question({ className }: { className: string }) {
+export function Question({ className }: { className?: string }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
