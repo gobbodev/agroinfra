@@ -13,6 +13,10 @@
     font-size: 30px;
   }
 
+  ._font-24 {
+    font-size: 24px;
+  }
+
   ._font-18 {
     font-size: 18px;
   }
@@ -33,11 +37,15 @@
 
   @media (max-width: 900px) {
     ._font-68 {
-      font-size: 60px;
+      font-size: 54px;
     }
 
     ._font-36 {
       font-size: 34px;
+    }
+
+    ._font-24 {
+      font-size: 22px;
     }
 
     ._font-30 {
@@ -50,11 +58,15 @@
   }
   @media (max-width: 600px) {
     ._font-68 {
-      font-size: 50px;
+      font-size: 48px;
     }
 
     ._font-36 {
       font-size: 32px;
+    }
+
+    ._font-24 {
+      font-size: 20px;
     }
 
     ._font-30 {
@@ -98,6 +110,10 @@
 
     ._font-30 {
       font-size: 22px;
+    }
+
+    ._font-24 {
+      font-size: 18px;
     }
 
     ._font-18 {

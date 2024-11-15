@@ -11,9 +11,9 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel';
 
-import { dataBanner } from '../data';
+import { dataProdutos } from '../data';
 
-export function BannerCarousel() {
+export function ProdutosCarousel() {
   return (
     <Carousel
       className='relative overflow-hidden'
@@ -25,10 +25,10 @@ export function BannerCarousel() {
       ]}
     >
       <Container>
-        <CarouselContent className='z-20 max-h-screen mobile_g:max-h-[80vh]'>
-          {dataBanner.map((item, index) => (
+        <CarouselContent className='z-20 max-h-screen '>
+          {dataProdutos.map((item, index) => (
             <CarouselItem
-              className='mt-12 w-full h-screen mobile_g:h-[78vh] flex flex-col items-center justify-center text-branco'
+              className='basis-1/3 mt-12 w-full h-screen flex flex-col items-center justify-center text-branco'
               key={item.title + index}
             >
               <div className='_banner-title _shadow-text font-osvaldo'>
@@ -39,7 +39,7 @@ export function BannerCarousel() {
                 )}
               </div>
               <p className='_font-30 _shadow-text uppercase font-extralight text-branco text-center'>
-                {item.subTitle}
+                {item.text}
               </p>
             </CarouselItem>
           ))}

@@ -1,11 +1,11 @@
 import { Background } from './Background';
-import { CarouselComponent } from './Carousel';
+import { BannerCarousel } from './Carousel';
 
 export function Banner() {
   return (
     <>
       <Background />
-      <CarouselComponent />
+      <BannerCarousel />
     </>
   );
 }

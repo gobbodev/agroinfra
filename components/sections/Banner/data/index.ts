@@ -1,15 +1,14 @@
-//ensinamos como ter a sua próxima safra sem perdas
 export const dataBanner = [
   {
-    titulo: `experiência de <span style="color: var(--verde);">30 anos </span>em agronegócios`,
-    subTitulo: "Uma equipe de ponta e altamente qualificada",
+    title: `experiência de <span style="color: var(--verde);">30 anos </span>em agronegócios`,
+    subTitle: "Uma equipe de ponta e altamente qualificada",
   },
   {
-    titulo: `potencializamos suas culturas <span style="color: var(--verde);">ao máximo</span>`,
-    subTitulo: "Soluções inovadoras com um ótimo custo",
+    title: `potencializamos suas culturas <span style="color: var(--verde);">ao máximo</span>`,
+    subTitle: "Soluções inovadoras com um ótimo custo",
   },
   {
-    titulo: `aumentamos seus <span style="color: var(--verde);">lucros</span> exponencialmente`,
-    subTitulo: "Não irrigar em 2024 é = perder dinheiro",
+    title: `aumentamos seus <span style="color: var(--verde);">lucros</span> exponencialmente`,
+    subTitle: "Não irrigar em 2024 é = perder dinheiro",
   },
 ];

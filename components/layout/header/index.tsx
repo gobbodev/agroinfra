@@ -50,7 +50,7 @@ export function Header() {
         >
           {dataLayout.map((item, index) => (
             <Link
-              className='_font-16 _shadow-text _underline-effect relative font-semibold mobile:_font-18'
+              className='_font-16 _shadow-text _underline-effect relative font-semibold mobile:_font-24'
               href={item.link}
               key={item.text + index}
               onClick={() => isOpen && setIsOpen(false)}

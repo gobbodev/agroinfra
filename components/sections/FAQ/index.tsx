@@ -22,13 +22,13 @@ export function FAQ() {
         >
           {dataFAQ.map((item, index) => (
             <AccordionItem value={`item-${index}`} key={item.text + index}>
-              <AccordionTrigger>{item.title}</AccordionTrigger>
-              <AccordionContent>{item.text}</AccordionContent>
+              <AccordionTrigger className="_font-18 font-medium mobile_g:leading-normal">{item.title}</AccordionTrigger>
+              <AccordionContent className="_font-18">{item.text}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
 
-        <Question className="z-0 absolute right-4 top-5 laptop:_r-top laptop:bottom-[-60px] laptop:max-w-28 laptop:opacity-10" />
+        <Question className="z-0 absolute right-4 top-8 laptop:_r-top laptop:bottom-[-60px] laptop:max-w-28 laptop:opacity-10" />
       </Container>
     </section>
   );
