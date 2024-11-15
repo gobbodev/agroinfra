@@ -1,8 +1,8 @@
 'use client';
-import Autoplay from 'embla-carousel-autoplay';
-import Link from 'next/link';
 
-import { ArrowDown } from '@/public/svg';
+import Image from 'next/image';
+
+import Autoplay from 'embla-carousel-autoplay';
 
 import { Container } from '@/components/ui/container';
 import {
@@ -13,6 +13,7 @@ import {
 
 import { dataProdutos } from '../data';
 
+//componentizar isso tb?
 export function ProdutosCarousel() {
   return (
     <Carousel
@@ -25,37 +26,29 @@ export function ProdutosCarousel() {
       ]}
     >
       <Container>
-        <CarouselContent className='z-20 max-h-screen '>
+        <CarouselContent className='z-20 '>
           {dataProdutos.map((item, index) => (
             <CarouselItem
-              className='basis-1/3 mt-12 w-full h-screen flex flex-col items-center justify-center text-branco'
+              className='bg-preto px-10 py-12 basis-1/3 mt-12 flex flex-col items-center text-branco'
               key={item.title + index}
             >
-              <div className='_banner-title _shadow-text font-osvaldo'>
+              <div className='_bag-image h-60 _margin-13b'>
+                <Image src={item.image.src} alt={item.image.alt} fill />
+              </div>
+              <div className='_shadow-text font-osvaldo _font-36 uppercase _margin-25b text-verde-forte'>
                 {index == 0 ? (
                   <h1 dangerouslySetInnerHTML={{ __html: item.title }} />
                 ) : (
                   <h2 dangerouslySetInnerHTML={{ __html: item.title }} />
                 )}
               </div>
-              <p className='_font-30 _shadow-text uppercase font-extralight text-branco text-center'>
+              <p className='_font-18 font-light text-branco text-justify'>
                 {item.text}
               </p>
             </CarouselItem>
           ))}
         </CarouselContent>
       </Container>
-
-      <Link
-        href={'#irrigacao'}
-        className='_effect-reflection absolute py-4 px-[30px] bottom-0 left-1/2 -translate-x-1/2 z-20 mobile:py-3 mobile:px-6'
-      >
-        <span className='absolute' />
-        <span className='absolute' />
-
-        <ArrowDown className='absolute top-2 mobile:w-7 mobile:h-7' />
-        <ArrowDown className='mt-[10px] mobile:w-7 mobile:h-7  mobile:mt-[8px]' />
-      </Link>
     </Carousel>
   );
 }

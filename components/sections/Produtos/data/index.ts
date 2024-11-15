@@ -19,7 +19,15 @@ export const dataProdutos = [
     title: 'pivôs',
     text: 'Um pivô de irrigação é um sistema de irrigação que utiliza uma estrutura metálica com rodas para distribuir água de forma controlada e automatizada às plantações. O pivô gira em torno de um ponto central, aspergindo água sobre as plantas.',
     image: {
-      src: '/images/productspivo.jpg/',
+      src: '/images/products/pivo.jpg',
+      alt: 'grande campo de trigo verde, com pivôs de irrigação em cima cobrindo o campo inteiro',
+    },
+  },
+  {
+    title: 'teste',
+    text: 'Um pivô de irrigação é um sistema de irrigação que utiliza uma estrutura metálica com rodas para distribuir água de forma controlada e automatizada às plantações. O pivô gira em torno de um ponto central, aspergindo água sobre as plantas.',
+    image: {
+      src: '/images/products/pivo.jpg',
       alt: 'grande campo de trigo verde, com pivôs de irrigação em cima cobrindo o campo inteiro',
     },
   },
