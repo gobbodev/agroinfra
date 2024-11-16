@@ -19,6 +19,7 @@ html {
 @layer base {
   :root {
     --preto: #191c19;
+    --preto-fraco: #292c29;
     --verde: #84c44c;
     --verde-forte: #8cd948;
     --branco: #e2e8f0;

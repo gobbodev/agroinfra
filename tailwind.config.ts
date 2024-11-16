@@ -1,68 +1,69 @@
-import type { Config } from "tailwindcss";
-import tailwind_animate_plugin from "tailwindcss-animate";
+import type { Config } from 'tailwindcss';
+import tailwind_animate_plugin from 'tailwindcss-animate';
 
 export default {
-  darkMode: ["class"],
+  darkMode: ['class'],
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       fontFamily: {
-        osvaldo: "var(--font-osvaldo)",
+        osvaldo: 'var(--font-osvaldo)',
       },
       colors: {
-        verde: "var(--verde)",
-        branco: "var(--branco)",
-        preto: "var(--preto)",
-        "verde-forte": "var(--verde-forte)",
+        verde: 'var(--verde)',
+        branco: 'var(--branco)',
+        preto: 'var(--preto)',
+        'verde-forte': 'var(--verde-forte)',
+        'preto-fraco': 'var(--preto-fraco)',
       },
       screens: {
         container: {
-          max: "1200px",
+          max: '1200px',
         },
         laptop: {
-          max: "1050px",
+          max: '1050px',
         },
         mobile: {
-          max: "950px",
+          max: '950px',
         },
         mobile_g: {
-          max: "600px",
+          max: '600px',
         },
         mobile_m: {
-          max: "450px",
+          max: '450px',
         },
         mobile_s: {
-          max: "380px",
+          max: '380px',
         },
         mobile_sx: {
-          max: "350px",
+          max: '350px',
         },
       },
       keyframes: {
-        "accordion-down": {
+        'accordion-down': {
           from: {
-            height: "0",
+            height: '0',
           },
           to: {
-            height: "var(--radix-accordion-content-height)",
+            height: 'var(--radix-accordion-content-height)',
           },
         },
-        "accordion-up": {
+        'accordion-up': {
           from: {
-            height: "var(--radix-accordion-content-height)",
+            height: 'var(--radix-accordion-content-height)',
           },
           to: {
-            height: "0",
+            height: '0',
           },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
       },
     },
   },
