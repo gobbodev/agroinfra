@@ -3,6 +3,7 @@ import { Banner } from '@/components/sections/Banner';
 import { FAQ } from '@/components/sections/FAQ';
 import { PorqueIrrigar } from '@/components/sections/PorqueIrrigar';
 import { Produtos } from '@/components/sections/Produtos';
+import { SobreNos } from '@/components/sections/SobreNos';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       </main>
       <AumentandoLucros />
       <Produtos />
+      <SobreNos />
     </div>
   );
 }
