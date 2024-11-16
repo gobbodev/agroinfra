@@ -11,13 +11,13 @@ export function Title({ title, subTitle, darkMode }: TitleProps) {
     <>
       <div className={`flex flex-col items-center`}>
         {subTitle && (
-          <span
+          <p
             className={`_sub-title _margin-8b flex gap-2 text-sm text-verde font-light uppercase items-center`}
           >
             <Crown />
             {subTitle}
             <Crown />
-          </span>
+          </p>
         )}
         <h2 className={`${darkMode ? "text-branco" : "text-preto"} _title`}>
           {title}

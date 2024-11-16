@@ -16,7 +16,7 @@ export function AumentandoLucros() {
         <br/><br/> Imagine uma fazenda de 10 hectares, localizada em uma região marcada pela escassez hídrica. Sem acesso à irrigação, o produtor luta contra as secas recorrentes, obtendo uma produtividade média de apenas 40 sacas de soja por hectare. Com uma receita bruta anual de R$ 56.000 e lucro de R$ 21.000, esse cenário representa um desafio constante para a sustentabilidade do negócio.
         <br/><br/> Agora, visualize essa mesma fazenda com um sistema de irrigação. A produtividade média salta para incríveis 55 sacas de soja por hectare, elevando a receita bruta para R$ 77.000 e o lucro para impressionantes R$ 32.000. Isso representa um <b>aumento de 52% no lucro anual!</b>
         <br/><br/> Água é vida, e para o produtor rural, <b>a água é seu ouro</b> - a chave para colher fartos resultados, mesmo em tempos de escassez. Ao investir na irrigação, o agricultor se protege contra as intempéries, garante a produtividade de suas culturas e alavanca seus ganhos financeiros.
-        <br/><br/><b> Não deixe que a sua fazenda fique à mercê das secas!"
+        <br/><br/><b> Não deixe que a sua fazenda fique à mercê das secas! </b>"
     />
   );
 }
