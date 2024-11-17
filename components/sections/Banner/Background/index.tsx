@@ -13,7 +13,7 @@ export function Background() {
           alt='plantação de arroz em um final de tarde'
           fill
           priority
-          onLoadingComplete={() => setImageLoaded(true)}
+          onLoad={() => setImageLoaded(true)}
         />
       </div>
       <div

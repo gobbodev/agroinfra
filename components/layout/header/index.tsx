@@ -22,7 +22,7 @@ export function Header() {
   }, [isOpen]);
 
   return (
-    <header className='w-full absolute z-50 text-branco py-5'>
+    <header id='header' className='w-full absolute z-50 text-branco py-5'>
       <Container className='flex justify-between items-center'>
         <div className='_bag-image max-w-[350px] laptop:max-w-60 mobile_s:max-w-52 mobile_sx:max-w-[200px]'>
           <Image
