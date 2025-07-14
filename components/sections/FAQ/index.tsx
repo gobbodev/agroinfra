@@ -22,7 +22,7 @@ export function FAQ() {
         >
           {dataFAQ.map((item, index) => (
             <AccordionItem value={`item-${index}`} key={item.text + index}>
-              <AccordionTrigger className="_font-18 font-medium mobile_g:leading-normal">{item.title}</AccordionTrigger>
+              <AccordionTrigger className="_font-18 font-semibold mobile_g:leading-normal">{item.title}</AccordionTrigger>
               <AccordionContent className="_font-18">{item.text}</AccordionContent>
             </AccordionItem>
           ))}
